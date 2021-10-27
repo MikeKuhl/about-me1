@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>About Me</title>
-    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,22 +10,52 @@
         <h1>About Me</h1>
         <h2>Michael Metcalf</h2>
         <ul>
-            <ls id='leftButton'>Home</ls>
+            <!-- <ls id='leftButton'>Home</ls>
             <ls id='centerButton'>About</ls>
-            <ls id='rightButton'>Contact</ls>
+            <ls id='rightButton'>Contact</ls> -->
+            <button id='home' onclick="this.innerHTML = 'Already There'">Home</button>
+            <button id='playGame' onclick="userPlay()">Play a Game</button>
+            <button id='top10List' onclick="this.innerHTML = 'Scroll Down'">Top 10</button>
         </ul>
     </header>
     <main>
         <p id="welcome">Welcome to my page <script src="app.js"></script></p>
 
-        <div>
+        <article>
             <p class="bullet">Growing Up</p>
 
             <p>As a child, I wanted to make lots of money, so that I could travel the world. I’ve traveled a bit but wanted more. I knew that you needed money to travel so that’s what I wanted but didn’t really understand how to get it.</p>
 
             <p>As a teen, I wanted to do something that was high tech, so that I could be challenged mentally. I was one of those teens that wouldn’t do any of the homework but ace the test. I didn’t feel challenged, so I put in minimal effort. This is probably why I didn’t care to go to college and instead joined the Army as a Signals Intelligence Analyst.</p>
+        </article>
+        <div class="ed">
+            <strong>Military Schools</strong>
+                <ul>
+                    <li>Senior Leadership Course</li>
+                    <li>Advanced Leadership Course</li>
+                    <li>Warriors Leadership Course</li>
+                    <li>Key Management Infrastructure Course</li>
+                    <li>Communication Security Account Manager Course</li>
+                    <li>Army Recruiter Course</li>
+                    <li>Signals Intelligence Course</li>
+                </ul>
         </div>
-        <div>
+        <div class="ed">
+            <strong>Education</strong>
+                <ul>
+                    <li>Certified Full Stack Software Developer, focused on JavaScript</li>
+                        <ul>
+                            <li>Code Fellows</li>
+                            <li>Oct 2021 - Mar 2022</li>
+                        </ul>
+                    <li>BS Cybersecurity Management and Policy</li>
+                        <ul>
+                            <li>University of Maryland Global Campus</li>
+                            <li>2018 - 2023</li>
+                        </ul>
+               </ul>
+        </div>
+        <article>
             <p class="bullet">Professional Life</p>
 
             <p>As a young Soldier, I wanted to be involved with high profile projects, so that I could be part of the excitement. I was the guy who bounced around different projects because that was the big thing at that moment. I was the team lead for the Surface-to-Surface Missile (SSM) team, team lead on the Saddam Fedayeen Militia team, and a team member on the Iranians in Iraq team. The excitement was always high and that’s what I was after.</p>
@@ -33,6 +63,32 @@
             <p>As a senior Soldier, I wanted serenity, so that I could do my job and help those who needed it. I got tired of the random stress that the Army felt was necessary. For periods of time, I had serenity and I was so much more productive that I always had time to help others with their projects. As with most things in the Army, those times ebbed and flowed with the current situation of the unit.</p>
             
             <p>As a civilian again, I want to be part of the tech work force, so that I can that challenge again and have a professional purpose again. After 20 years in the Army, things have obviously changed and I’m now playing catchup. I’ve always had interest in coding but didn’t know where to start. When I heard about Code Fellows, I was a little skeptical. Now that I’m in it, I’m embracing the challenge and want to keep going and push myself to the next level and then the next all the way to the top.</p>
+        </article>
+        
+        <div class="ed">
+            <strong>Professions</strong>
+                <ul>
+                    <li>U.S. Army</li>
+                        <ul>
+                            <li>2001 - 2021</li>
+                        </ul>
+                </ul>
+        </div>>
+
+        <div id='top10'>
+            <h3>Top 10 Places I've Visited</h3>
+            <ol>
+                <li>San Sambastian, Spain</li>
+                <li>Venice, Italy</li>
+                <li>Amsterdam, Neatherlands</li>
+                <li>Prague, Czech Republic</li>
+                <li>Florence, Italy</li>
+                <li>Daegu, South Korea</li>
+                <li>Rome, Italy</li>
+                <li>Edinburgh, Scotland</li>
+                <li>Reykjavik, Iceland</li>
+                <li>Budapest, Hungary</li>
+            </ol>
         </div>
     </main>
     <footer>

@@ -1,12 +1,14 @@
 body {
     color: blue;
     background-color: lightgray;
+    padding: 20px;
 }
 
 h1 {
     color: darkblue;
     font-size: 8em;
     text-align: center;
+    border-bottom:4px solid darkblue;
 }
 
 h2 {
@@ -14,17 +16,18 @@ h2 {
     font-size: 3em;
     margin: 0.5em;
     text-align: center;
+    border-bottom: 3px solid rgb(22, 22, 155);
 }
 
 header ul{
     align-items: center;
 }
 
-header ls{
+header button{
     border:ghostwhite 4px;
     display: inline;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 75px;
+    padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 4em;
@@ -57,11 +60,13 @@ body p{
     margin: .5em;
 }
 
-body div{
+body article{
     border: ghostwhite solid 2px;
+    padding: 2em;
     margin-left: 5em;
     margin-right: 5em;
     margin-bottom: 2em;
+    border-radius: 2em;
     box-shadow: 5px 5px 3px navy;
 }
 
@@ -75,4 +80,24 @@ body div{
 #goodbye{
     text-align: center;
     margin-top: 1em;
+}
+
+.ed{
+    margin-left: 10em;
+    margin-bottom: 25px;
+    margin-right: 75em;
+    border: ghostwhite solid 2px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 3px navy;
+    padding: 15px;
+}
+
+#top10{
+    margin-left: 30em;
+    margin-bottom: 5em;
+    margin-right: 70em;
+    border: ghostwhite solid 2px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 3px navy;
+    padding: 15px;
 }
