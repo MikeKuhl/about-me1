@@ -27,14 +27,14 @@ header ls{
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 8em;
+    margin: 4em;
     color: slategrey;
     background-color: lightsteelblue;
     text-align: center;
     box-shadow: 10px 10px 3px navy;
 }
 
-#leftButton{
+/* #leftButton{
     float: left;
 }
 
@@ -44,7 +44,7 @@ header ls{
 
 #rightButton{
     float: right;
-}
+} */
 
 .bullet{
     color: blue;
