@@ -1,3 +1,5 @@
+'use strict';
+
 // let userKnow = prompt('Do you know Michael Metcalf?','Yes or No');
 
 // let know = userKnow.toLowerCase();
@@ -9,6 +11,20 @@
 // if (known === 'yes'){
 //   alert('well its nice to know you.');
 // }
+
+let userName = prompt('Whats your name?');
+function user(userName) {
+  console.log('Users name is ' + userName);
+  if(userName === 'Michael'){
+    document.write('Doppelganger');
+  } else {
+    document.write(userName);
+  }
+}
+
+user(userName);
+
+
 
 // can I make this into booleen
 let userKnow = prompt('Do you know Michael Metcalf?','Yes or No');
