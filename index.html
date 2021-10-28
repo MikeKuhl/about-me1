@@ -9,14 +9,13 @@
     <header>
         <h1>About Me</h1>
         <h2>Michael Metcalf</h2>
-        <ul>
-            <!-- <ls id='leftButton'>Home</ls>
-            <ls id='centerButton'>About</ls>
-            <ls id='rightButton'>Contact</ls> -->
-            <button id='home' onclick="this.innerHTML = 'Already There'">Home</button>
-            <button id='playGame' onclick="gameTime()">Play a Game</button>
-            <button id='top10List' onclick="this.innerHTML = 'Scroll Down'">Top 10</button>
-        </ul>
+        <nav>
+            <ul>
+                <button id='home' onclick="this.innerHTML = 'Already There'">Home</button>
+                <button id='playGame' onclick="gameTime()">Play a Game</button>
+                <button id='top10List' onclick= href="#top10">Top 10</button>
+            </ul>
+        </nav>
     </header>
     <main>
         <p id="welcome">Welcome to my page <script src="app.js"></script></p>
@@ -93,6 +92,11 @@
     </main>
     <footer>
         <p id="goodbye">Thanks for visiting <script>user(userName)</script></p>
+        <nav>
+            <ul>
+                <button id='home' onclick="this.innerHTML = 'Already There'">Home</button>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
