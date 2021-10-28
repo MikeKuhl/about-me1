@@ -23,31 +23,129 @@ function user(userName) {
 }
 
 user(userName);
-
-function scroll() {
-
-}
-
 let userScore = 0;
 
-function userPlay() {
+function gameTime(){
+  let arrayOfQuestions = [question1(), question2(), question3(), question4(), question5(), question6(), question7()
+  ];
+  console.log('User got ' + userScore + ' correct');
+  alert('You scored ' + userScore + ' of 7 possible points');
+}
+
+function question1() {
   let userGuess1 = prompt('Am I from Seattle?','Yes or No');
   userGuess1.toLowerCase();
   console.log('Guess for question 1 is ' + userGuess1);
-  if (userGuess1 === false){
+  if (userGuess1 === 'no' || 'n'){
     alert('Correct I am from Port Orchard Washington');
     userScore++;
-  } else if (userGuess1 === true){
-    alert('Correct I am from Port Orchard Washington');
+  } else if (userGuess1 === 'yes' || 'y'){
+    alert('Nope, I am from Port Orchard Washington');
   }
 }
 
+function question2() {
+  let userGuess2 = prompt('Am I younger than 40 years old?','Yes or No');
+  userGuess2.toLowerCase();
+  console.log('Guess for question 2 is ' + userGuess2);
+  if (userGuess2 === 'no' || 'n'){
+    alert('Do I really look that old? I am 39!');
+    userScore++;
+  } else if (userGuess2 === 'yes' || 'y'){
+    alert('Correct I am 39 years old');
+  }
+}
+
+function question3() {
+  let userGuess3 = prompt('Am I younger than 40 years old?','Yes or No');
+  userGuess3.toLowerCase();
+  console.log('Guess for question 3 is ' + userGuess3);
+  if (userGuess3 === 'no' || 'n'){
+    alert('Do I really look that old? I am 39!');
+    userScore++;
+  } else if (userGuess3 === 'yes' || 'y'){
+    alert('Correct I am 39 years old');
+  }
+}
+
+function question4() {
+  let userGuess4 = prompt('Am I younger than 40 years old?','Yes or No');
+  userGuess4.toLowerCase();
+  console.log('Guess for question 4 is ' + userGuess4);
+  if (userGuess4 === 'no' || 'n'){
+    alert('Do I really look that old? I am 39!');
+    userScore++;
+  } else if (userGuess4 === 'yes' || 'y'){
+    alert('Correct I am 39 years old');
+  }
+}
+
+function question5() {
+  let userGuess5 = prompt('Am I younger than 40 years old?','Yes or No');
+  userGuess5.toLowerCase();
+  console.log('Guess for question 5 is ' + userGuess5);
+  if (userGuess5 === 'no' || 'n'){
+    alert('Do I really look that old? I am 39!');
+    userScore++;
+  } else if (userGuess5 === 'yes' || 'y'){
+    alert('Correct I am 39 years old');
+  }
+}
+
+function question6() {
+  let userGuess6 = prompt('Guess a number between 1 and 50','1 - 50');
+  let attempts6 = 4;
+  let correctNum = (Math.floor(Math.random() * 50) + 1);
+  parseInt(userGuess6);
+  for(let a = 0; a < attempts6; a++)
+    console.log('Guess for question 6 is ' + userGuess6);
+  while(userGuess6 < 1 || userGuess6 < 50){
+    userGuess6 = prompt('Are numbers too hard for you? Try again. Guess a number between 1 and 50','1 - 50');
+    parseInt(userGuess6);
+  }
+  if (userGuess6 === correctNum){
+    alert('Wow! You actual picked the right number.');
+    userScore++;
+  } else if (userGuess6 < correctNum){
+    userGuess6 = prompt('Too low. Try again.','1 - 50');
+    parseInt(userGuess6);
+  } else if (userGuess6 > correctNum){
+    userGuess6 = prompt('Too high. Try again.','1 - 50');
+    parseInt(userGuess6);
+  } else{
+    alert('Didnt quite get the right number. The number was ' + correctNum);
+  }
+}
+
+function question7() {
+  let userGuess7 = prompt('What famous English city did I live by?','choose wisely');
+  userGuess7.toLowerCase();
+  let attempts7 = 6;
+  let cities = ['London', 'Bath', 'York', 'Oxford', 'Manchester', 'Birmingham', 'Liverpool', 'Bristol', 'Brighton'];
+  for(let b = 0; b < attempts7; b++)
+    console.log('Guess for question 7 is ' + userGuess7);
+  if (userGuess7 === 'cambridge'){
+    alert('Nice job!');
+    userScore++;
+  } else if (userGuess7 !== cities.toLowerCase()){
+    userGuess7 = prompt('Is that even in England? Try again.');
+    userGuess7.toLowerCase();
+  } else if (userGuess7 === cities.toLowerCase()){
+    userGuess7 = prompt('Close but not quite it. Try again.');
+    userGuess7.toLowerCase();
+  } else{
+    alert('So close but I lived by Cambridge. The other cities in England you could have choosen were London, Bath, York, Oxford, Manchester, Birmingham, Liverpool, Bristol, Brighton');
+  }
+}
+
+
+
+
+
+
+
 // for (let g = 1; g <= 4; g++)
 //   console.log('Guess number ' + g);
-
-
-
-
 
 // can I make this into booleen
 // let userKnow = prompt('Do you know Michael Metcalf?','Yes or No');
@@ -119,6 +217,3 @@ function userPlay() {
 // default:
 //   console.log('this user was not in Code Fellows');
 // }
-
-console.log('User got ' + userScore + ' correct');
-alert('You scored ' + userScore + ' of 7 possible points');
